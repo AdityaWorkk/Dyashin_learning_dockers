@@ -1,4 +1,4 @@
-FROM Python:3.11-slim
+FROM python:3.11-slim
 
 WORKDIR /Dyashin_Cloud
 
@@ -15,4 +15,4 @@ COPY . .
 
 EXPOSE 8000
 
-CMD ["uvicorn","fastapi_app:app","--host","0.0.0.0","--post","8000"]
+CMD ["uvicorn","fastapi_app:app","--host","0.0.0.0","--port","8000"]
